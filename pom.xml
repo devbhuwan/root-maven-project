@@ -217,4 +217,7 @@
         </profile>
     </profiles>
 
+    <modules>
+        <module>root-maven-plugin-project</module>
+    </modules>
 </project>
