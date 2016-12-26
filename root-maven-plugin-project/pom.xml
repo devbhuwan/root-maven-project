@@ -15,6 +15,8 @@
     <packaging>pom</packaging>
 
     <properties>
+        <github.repo.name>root-maven-plugin-project</github.repo.name>
+
         <dependency.maven-plugin-api.version>3.3.9</dependency.maven-plugin-api.version>
         <dependency.maven-plugin-annotations.version>3.5</dependency.maven-plugin-annotations.version>
         <dependency.plexus-utils.version>3.5</dependency.plexus-utils.version>
