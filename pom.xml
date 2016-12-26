@@ -74,7 +74,7 @@
         <repository>
             <id>io.github.devbhuwan-SNAPSHOTS</id>
             <name>io.github.devbhuwan-SNAPSHOTS</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/io/github/devbhuwan/</url>
         </repository>
     </repositories>
 
