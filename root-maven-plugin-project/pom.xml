@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>root-maven-plugin-project</artifactId>
+    <name>Maven Plugin Parent POM</name>
     <packaging>pom</packaging>
 
     <properties>
