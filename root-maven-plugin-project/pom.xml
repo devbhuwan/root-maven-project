@@ -23,6 +23,8 @@
         <dependency.commons-io.version>2.5</dependency.commons-io.version>
         <dependency.maven-artifact.version>2.2.1</dependency.maven-artifact.version>
         <dependency.maven-project.version>3.3.9</dependency.maven-project.version>
+
+        <plugin.maven-plugin-plugin.version>3.5</plugin.maven-plugin-plugin.version>
     </properties>
 
     <dependencyManagement>
@@ -87,5 +89,39 @@
             <artifactId>commons-io</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-plugin-plugin</artifactId>
+                    <version>${plugin.maven-plugin-plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-plugin-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>default-descriptor</id>
+                        <goals>
+                            <goal>descriptor</goal>
+                        </goals>
+                        <phase>process-classes</phase>
+                    </execution>
+                    <execution>
+                        <id>help-descriptor</id>
+                        <goals>
+                            <goal>helpmojo</goal>
+                        </goals>
+                        <phase>process-classes</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
