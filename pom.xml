@@ -70,6 +70,14 @@
         </site>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>io.github.devbhuwan-SNAPSHOTS</id>
+            <name>io.github.devbhuwan-SNAPSHOTS</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
