@@ -6,7 +6,7 @@
 
     <groupId>io.github.devbhuwan</groupId>
     <artifactId>root-maven-project</artifactId>
-    <version>1.0.0</version>
+    <version>1.0-SNAPSHOT</version>
 
     <name>Maven Parent POM</name>
     <packaging>pom</packaging>
@@ -60,10 +60,10 @@
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
+        <!--<repository>-->
+            <!--<id>ossrh</id>-->
+            <!--<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
+        <!--</repository>-->
         <site>
             <id>site</id>
             <url>https://github.com/devbhuwan/${github.repo.name}</url>
@@ -130,7 +130,6 @@
         <plugin.nexus.staging.maven.version>1.6.7</plugin.nexus.staging.maven.version>
         <plugin.maven.gpg.version>1.5</plugin.maven.gpg.version>
 
-        <gpg.passphrase>B06F666E978D27F4F026D756B4F929E3641096B4</gpg.passphrase>
     </properties>
 
     <build>
@@ -220,4 +219,5 @@
     <modules>
         <module>root-maven-plugin-project</module>
     </modules>
+
 </project>
