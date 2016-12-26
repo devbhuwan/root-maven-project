@@ -125,10 +125,10 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <github.repo.name>root-maven-project</github.repo.name>
 
-        <plugin.maven.source.version>2.2.1</plugin.maven.source.version>
-        <plugin.maven.javadoc.version>2.9.1</plugin.maven.javadoc.version>
-        <plugin.nexus.staging.maven.version>1.6.7</plugin.nexus.staging.maven.version>
-        <plugin.maven.gpg.version>1.5</plugin.maven.gpg.version>
+        <plugin.maven-source-plugin.version>2.2.1</plugin.maven-source-plugin.version>
+        <plugin.maven-javadoc-plugin.version>2.9.1</plugin.maven-javadoc-plugin.version>
+        <plugin.nexus-staging-maven-plugin.version>1.6.7</plugin.nexus-staging-maven-plugin.version>
+        <plugin.maven-gpg-plugin.version>1.5</plugin.maven-gpg-plugin.version>
 
     </properties>
 
@@ -138,22 +138,22 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
-                    <version>${plugin.maven.source.version}</version>
+                    <version>${plugin.maven-source-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>${plugin.maven.javadoc.version}</version>
+                    <version>${plugin.maven-javadoc-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.sonatype.plugins</groupId>
                     <artifactId>nexus-staging-maven-plugin</artifactId>
-                    <version>${plugin.nexus.staging.maven.version}</version>
+                    <version>${plugin.nexus-staging-maven-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-gpg-plugin</artifactId>
-                    <version>${plugin.maven.gpg.version}</version>
+                    <version>${plugin.maven-gpg-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
